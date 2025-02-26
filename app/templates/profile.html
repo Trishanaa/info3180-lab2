@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class="profile-container">
+    <img src="{{ url_for('static', filename='image/profile.png') }}" alt="Profile Picture">
+    <h1>{{ full_name }}</h1>
+    <h2>{{ profile.full_name }}</h2>
+    <p>@{{ profile.username }}</p>
+    <p><strong>Location:</strong> {{ profile.location }}</p>
+    <p><strong>Joined:</strong> {{ profile.date_joined }}</p>
+    <p>{{ profile.bio }}</p>
+
+    <div class="profile-stats">
+        <span><strong>{{ profile.posts }}</strong> Posts</span>
+        <span><strong>{{ profile.followers }}</strong> Followers</span>
+        <span><strong>{{ profile.following }}</strong> Following</span>
+    </div>
+
+    <button class="Follow-btn">Follow</button>
+</div>
+
+{% endblock %}
