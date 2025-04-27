@@ -15,7 +15,7 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Kaydeen Tucker")
+    return render_template('about.html', name="Trishana Mckane")
 
 
 @app.route('/profile/')
@@ -25,15 +25,15 @@ def profile():
     formatted_date = format_date_joined(date_joined)
 
     profile_info = {
-        "full_name": "Kaydeen Tucker",
-        "username": "Kaydeentucker123",
+        "full_name": "Trishana Mckane",
+        "username": "Trishana Mckane123",
         "location": "Bangkok, Thailand",
         "date_joined": formatted_date,
         "bio": "Web developer & tech enthusiast. Passionate about coding and open-source projects.",
         "posts": 42,
         "followers": 1500,
         "following": 300,
-        "profile_image": "Kaydeen Tucker",
+        "profile_image": "Trishana Mckane",
 
     }
 
